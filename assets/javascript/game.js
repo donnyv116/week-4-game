@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	var Random=Math.floor(Math.random()*101+19);
+	var Random=Math.floor(Math.random()*101)+19;
 	console.log(Random)
 
 $('#randomNumber').text(Random);
@@ -21,7 +21,7 @@ $('#numberWins').text(wins);
 $('#numberLosses').text(losses);
 
 function reset(){
-	Random = Math.floor(Math.random()*101+19)
+	Random = Math.floor(Math.random()*101)+19;
 	$('#randomNumber').text(Random);
 	num1 = Math.floor(Math.random()*12)+1;
 	num2 = Math.floor(Math.random()*12)+1;
