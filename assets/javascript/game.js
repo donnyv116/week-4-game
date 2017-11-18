@@ -4,11 +4,14 @@ $(document).ready(function(){
 
 $('#randomNumber').text(Random);
 
-var num1= Math.floor(Math.random()*11+1)
-var num2= Math.floor(Math.random()*11+1)
-var num3= Math.floor(Math.random()*11+1)
-var num4= Math.floor(Math.random()*11+1)
-
+var num1= Math.floor(Math.random()*12)+1
+var num2= Math.floor(Math.random()*12)+1
+var num3= Math.floor(Math.random()*12)+1
+var num4= Math.floor(Math.random()*12)+1
+console.log(num1)
+console.log(num2)
+console.log(num3)
+console.log(num4)
 
 var userTotal = 0;
 var wins = 0;
@@ -20,15 +23,11 @@ $('#numberLosses').text(losses);
 function reset(){
 	Random = Math.floor(Math.random()*101+19)
 	$('#randomNumber').text(Random);
-	num1 = Math.floor(Math.random()*11+1);
-	num2 = Math.floor(Math.random()*11+1);
-	num3 = Math.floor(Math.random()*11+1);
-	num4 = Math.floor(Math.random()*11+1);
-	console.log(num1)
-	console.log(num2)
-	console.log(num3)
-	console.log(num4)
-	userTotal = 0;
+	num1 = Math.floor(Math.random()*12)+1;
+	num2 = Math.floor(Math.random()*12)+1;
+	num3 = Math.floor(Math.random()*12)+1;
+	num4 = Math.floor(Math.random()*12)+1;
+		userTotal = 0;
 	$('#finalTotal').text(userTotal);
 }
 function win(){
